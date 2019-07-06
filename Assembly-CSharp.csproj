@@ -53,19 +53,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Background\Scripts\Move.cs" />
      <Compile Include="Assets\Scripts\Credits.cs" />
      <Compile Include="Assets\Scripts\EndTrigger.cs" />
      <Compile Include="Assets\Scripts\FollowPlayer.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\LevelComplete.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
+     <Compile Include="Assets\Scripts\Move.cs" />
      <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\PlayerCollision.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Score.cs" />
      <None Include="Assets\Fire\Procedural fire\Shaders\FireSphere.shader" />
-     <None Include="Assets\Background\README\Readme.txt" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/Users/elenafeuerstein/Desktop/IMD/IMD P6/Coding/CC Running Ball/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
