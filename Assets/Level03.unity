@@ -3722,6 +3722,16 @@ PrefabInstance:
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1489082459}
+    - target: {fileID: 2543545834312936887, guid: ac3cc1132a1be484daed31ae86748008,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 2543545834312936884, guid: ac3cc1132a1be484daed31ae86748008,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b8d520ea48c8349989cbc39cbf4e27e0, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac3cc1132a1be484daed31ae86748008, type: 3}
 --- !u!1001 &4337479250024839027
@@ -3810,6 +3820,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 8087413032401990456, guid: d4dded2488f4f4d4f832c4b0dae70b6e,
+        type: 3}
+      propertyPath: completeLevelUI
+      value: 
+      objectReference: {fileID: 46288489}
     - target: {fileID: 8087413032401990463, guid: d4dded2488f4f4d4f832c4b0dae70b6e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3865,10 +3880,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8087413032401990456, guid: d4dded2488f4f4d4f832c4b0dae70b6e,
-        type: 3}
-      propertyPath: completeLevelUI
-      value: 
-      objectReference: {fileID: 46288489}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4dded2488f4f4d4f832c4b0dae70b6e, type: 3}
