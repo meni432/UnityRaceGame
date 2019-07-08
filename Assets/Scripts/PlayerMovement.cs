@@ -1,12 +1,20 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using TMPro;
+using UnityEngine;
+
 
 public class PlayerMovement : MonoBehaviour
 {
-
     public Rigidbody rb;
 
    public float forwardForce = 2000f;
    public float sidewaysForce = 500f;
+   
+   private int points = 0;
+   public TextMeshProUGUI text;
+   
+   
 
     // Update is called once per frame
     void FixedUpdate()
@@ -27,5 +35,23 @@ public class PlayerMovement : MonoBehaviour
         if (rb.position.y < -1f){
             FindObjectOfType<GameManager>().EndGame();
         }
+        
+        
+    }
+    //Coints einsammeln und zählen
+     void OnTriggerEnter(Collider other){
+            
+        other.gameObject.SetActive(false);
+        points++;
+
+      //text.text = "Points: " + points;
+
+        Debug.Log(points);
+
+        if (points == 10){
+            Debug.Log("gewonnen!");
+
+            text.text = "Wuhuuu gewonnen";
+    }
     }
 }

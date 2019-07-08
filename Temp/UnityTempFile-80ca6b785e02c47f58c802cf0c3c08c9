@@ -302,6 +302,7 @@
 /define:CSHARP_7_3_OR_NEWER
 "Assets/Scripts/Coints.cs"
 "Assets/Scripts/Credits.cs"
+"Assets/Scripts/effects.cs"
 "Assets/Scripts/EndTrigger.cs"
 "Assets/Scripts/FollowPlayer.cs"
 "Assets/Scripts/GameManager.cs"

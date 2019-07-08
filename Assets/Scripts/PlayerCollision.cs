@@ -18,11 +18,4 @@ public class PlayerCollision : MonoBehaviour
             }
 
        }
-
-       void OnTriggerEnter(Collider collisionInfo ){
-       if (collisionInfo.gameObject.name == "coin"){
-                Destroy(collisionInfo.gameObject);
-                Coints.coinTotal +=1;
-            } 
-    }
 }
