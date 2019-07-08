@@ -53,7 +53,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Coints.cs" />
      <Compile Include="Assets\Scripts\Credits.cs" />
+     <Compile Include="Assets\Scripts\effects.cs" />
      <Compile Include="Assets\Scripts\EndTrigger.cs" />
      <Compile Include="Assets\Scripts\FollowPlayer.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
