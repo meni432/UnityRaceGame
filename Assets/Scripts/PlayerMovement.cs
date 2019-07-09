@@ -43,15 +43,10 @@ public class PlayerMovement : MonoBehaviour
             
         other.gameObject.SetActive(false);
         points++;
+    
+            //Coins zählen
+            text.text = "Coins: " + points;
 
-      //text.text = "Points: " + points;
-
-        Debug.Log(points);
-
-        if (points == 10){
-            Debug.Log("gewonnen!");
-
-            text.text = "Wuhuuu gewonnen";
-    }
+            Debug.Log(points);
     }
 }
