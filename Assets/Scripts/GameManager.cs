@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
         }
     }
     
+    //Repeat game
     void Restart(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }

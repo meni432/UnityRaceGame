@@ -22,11 +22,12 @@ public class PlayerMovement : MonoBehaviour
         // add a forwardForce
         rb.AddForce(0, 0, forwardForce * Time.deltaTime); 
 
+        //Press the "d" key to move the player to the right
         if (Input.GetKey("d")){
             rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange); 
 
         }
-
+        //Press the "a" key to move the player to the left
         if (Input.GetKey("a")){
             rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange); 
 
@@ -38,22 +39,22 @@ public class PlayerMovement : MonoBehaviour
         
         
     }
-    //Coints einsammeln und zählen
+    //Coints collect and count
      void OnTriggerEnter(Collider other){
         
-        //grafik deaktivieren
+        //Seactivate graphic
         other.gameObject.GetComponent<Renderer>().enabled = false;
         
-        //sound der Münze abspielen
+        //Playing the sound of the coin
         AudioSource audio = other.gameObject.GetComponent<AudioSource>();
         audio.Play();
         
-        //Münze zerstören
+        // Destroy coin
         Destroy (other.gameObject, audio.clip.length);
         //other.gameObject.SetActive(false);
         points++;
     
-            //Coins zählen
+            //Coins count
             text.text = "Coins: " + points;
 
             Debug.Log(points);

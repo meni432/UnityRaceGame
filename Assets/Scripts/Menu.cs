@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-   //Startscreen mit Button erscheint
+   //Startscreen with button appears
    public void StartGame(){
     
     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
