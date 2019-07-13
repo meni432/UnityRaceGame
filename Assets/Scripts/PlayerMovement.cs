@@ -40,8 +40,17 @@ public class PlayerMovement : MonoBehaviour
     }
     //Coints einsammeln und zählen
      void OnTriggerEnter(Collider other){
-            
-        other.gameObject.SetActive(false);
+        
+        //grafik deaktivieren
+        other.gameObject.GetComponent<Renderer>().enabled = false;
+        
+        //sound der Münze abspielen
+        AudioSource audio = other.gameObject.GetComponent<AudioSource>();
+        audio.Play();
+        
+        //Münze zerstören
+        Destroy (other.gameObject, audio.clip.length);
+        //other.gameObject.SetActive(false);
         points++;
     
             //Coins zählen
