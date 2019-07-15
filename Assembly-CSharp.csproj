@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\Credits.cs" />
      <Compile Include="Assets\Scripts\effects.cs" />
      <Compile Include="Assets\Scripts\EndTrigger.cs" />
+     <Compile Include="Assets\Scripts\exitScript.cs" />
      <Compile Include="Assets\Scripts\FollowPlayer.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\LevelComplete.cs" />
