@@ -4,7 +4,7 @@ public class Credits : MonoBehaviour
 {
     public void Quit(){
     
-        //Spiel wird beednet
+        //Game is finished
         Application.Quit();
     
     }

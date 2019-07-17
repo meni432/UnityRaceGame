@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
         completeLevelUI.SetActive(true);
     }
     
+    //Restart as soon as the player loses
     public void EndGame(){
         
         if(gameHasEnded == false){
