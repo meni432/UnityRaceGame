@@ -16,6 +16,5 @@ Each level stops the time.
 
 To end the game you have to press the "esc" key.
 
-So much fun while playing!
+Have fun during my game!
 
-Translated with www.DeepL.com/Translator
