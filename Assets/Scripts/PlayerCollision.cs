@@ -1,9 +1,13 @@
 ﻿ using UnityEngine;
+ using UnityEngine.UI;
+
 
 public class PlayerCollision : MonoBehaviour
 {
    
    public PlayerMovement movement;
+
+   public Text text;
    
    
        //This function runs when we hit another object
@@ -11,14 +15,14 @@ public class PlayerCollision : MonoBehaviour
        void OnCollisionEnter(Collision collisionInfo){
         
         //play the sound of the obstacle
-        AudioSource audio = collisionInfo.gameObject.GetComponent<AudioSource>();
-        audio.Play();
+        // AudioSource audio = collisionInfo.gameObject.GetComponent<AudioSource>();
+        // audio.Play();
 
             //Check if the object we collided with has a tag called "Hinderniss"
             if (collisionInfo.collider.tag == "Hinderniss"){
                 movement. enabled = false;
                 FindObjectOfType<GameManager>().EndGame();
-
+                text.text = "Run from the fire!";
             }
 
        }

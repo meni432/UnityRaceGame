@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using TMPro;
+// using TMPro;
 using UnityEngine;
 
 
@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
    public float sidewaysForce = 500f;
    
    private int points = 0;
-   public TextMeshProUGUI text;
+//    public TextMeshProUGUI text;
    
    
 
@@ -55,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
         points++;
     
             //Coins count
-            text.text = "Coins: " + points;
+            // text.text = "Coins: " + points;
 
             Debug.Log(points);
     }
